@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+</head>
+<body>
+    <h2>Listing</h2>
+    <div class="news-container">
+        <div class="news-item">
+            <!--  for item in news | iterating all the items in queryset -->
+            <span>News 1</span>
+            <div class="news-title">{{ title }}</div>
+            <div class="news-content">{{ content }}</div>
+            <!-- <img src="{% static 'image/example.jpg' %}" alt=""> need to add the image  -->
+            <div class="news-url">{{ img_url }}</div>
+            <!-- endfor  -->
+        </div>
+    </div>
+</body>
+</html>
